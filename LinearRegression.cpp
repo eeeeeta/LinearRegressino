@@ -2,20 +2,12 @@
 #include "LinearRegression.h"
 
 
-LinearRegression::LinearRegression(double min, double max){
-  minX = min;
-  maxX = max;
+LinearRegression::LinearRegression(){
 }
 
 void LinearRegression::learn(double x, double y){
   if(!fixedN){
     n++;
-  }
-
-  if(x < minX){
-    return;
-  } else if(x > maxX){
-    return;
   }
 
   meanX = meanX + ((x-meanX)/n);

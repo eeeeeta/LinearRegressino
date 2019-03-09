@@ -6,7 +6,7 @@
 class LinearRegression
 {
   public:
-    LinearRegression(double min, double max);
+    LinearRegression();
     void learn(double x, double y);
     double calculate(double x);
     double correlation();
@@ -23,8 +23,6 @@ class LinearRegression
     double covarXY = 0;
     double n = 0;
     bool fixedN = false;
-    double minX;
-    double maxX;
     // m*x + b = y;
     double m = 0;
     double b = 0;
